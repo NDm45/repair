@@ -76,9 +76,25 @@ img {
 
 .input {
   border: 1px solid #dddddd;
-  padding: 20px 26px;
+  padding: 23px 26px;
   font-size: 15px;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+  .section-subtitle {
+    display: block;
+    font-size: 14px;
+  }
+  .button {
+    padding: 19px 62px;
+  }
 }
 
 /* Импорт стилей шапки */
@@ -295,9 +311,9 @@ img {
 }
 
 .offer__title {
-  max-width: 345px;
+  max-width: 350px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .offer__subtitle {
@@ -310,13 +326,55 @@ img {
   width: 240px;
 }
 
-.offer__input:rirst-child {
+.offer__input:first-child {
   margin-right: 10px;
 }
 
 .offer__button {
   width: 100%;
   min-height: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 28px;
+}
+
+.offer__manager {
+  width: 47%;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer__tell {
+  font-size: 15px;
+}
+
+.offer__phone {
+  margin-top: 10px;
+  color: #333333;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.tell-block {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 1200px) {
@@ -339,6 +397,46 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer__title {
+    max-width: 260px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    margin-top: 0px;
+  }
+  .offer__subtitle {
+    max-width: 250px;
+    margin-bottom: 27px;
+  }
+  .offer__input {
+    margin-bottom: 10px;
+    width: 275px;
+  }
+  .offer__input:first-child {
+    margin-bottom: 8px;
+  }
+  .offer__button {
+    width: 275px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .offer-feedback {
+    margin-top: 20px;
+    display: block;
+  }
+  .offer__manager {
+    max-width: 220px;
+  }
+  .tell-block {
+    margin-top: 10px;
+    margin-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */

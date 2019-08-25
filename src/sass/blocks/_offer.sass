@@ -16,20 +16,42 @@
 		padding-right: 90px
 		position: relative
 	&__title
-		max-width: 345px
+		max-width: 350px
 		line-height: 35px
-		margin-bottom: 24px
+		margin-bottom: 21px
 	&__subtitle
 		max-width: 250px
 		margin-bottom: 30px
 	&__input
 		margin-bottom: 30px
 		width: 240px
-		&:rirst-child
+		&:first-child
 			margin-right: 10px
 	&__button
 		width: 100%
 		min-height: 70px
+		+bold
+	&-feedback
+		display: flex
+		justify-content: space-between
+		margin-top: 28px
+	&__manager
+		width: 47%
+		font-size: 15px
+		line-height: 24px
+	&__tell
+		font-size: 15px
+	&__phone
+		margin-top: 10px 
+		color: $text-color
+		text-decoration: none
+		font-size: 15px
+		+bold
+.tell-block
+	margin-right: 10px
+	display: flex
+	flex-direction: column
+
 @media (max-width: 1200px)
 	.offer
 		background-size: cover
@@ -44,3 +66,29 @@
 		&-block
 			width: 100%
 			padding-right: 0
+		&__title
+			max-width: 260px
+			line-height: 22px
+			margin-bottom: 18px
+			margin-top: 0px
+		&__subtitle
+			max-width: 250px
+			margin-bottom: 27px
+		&__input
+			margin-bottom: 10px
+			width: 275px
+			&:first-child
+				margin-bottom: 8px
+		&__button
+			width: 275px
+			+bold
+		&-feedback
+			margin-top: 20px
+			display: block
+		&__manager
+			max-width: 220px
+	.tell-block
+		margin-top: 10px
+		margin-right: 10px
+		display: flex
+		flex-direction: column
