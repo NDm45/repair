@@ -10,8 +10,11 @@
 		display: flex
 	&-dialog
 		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
 		margin: auto
-		max-width: 450px
+		max-width: 1000px
 		width: 90%
 		min-width: 200px
 		background-color: #fff
@@ -20,3 +23,28 @@
 			position: absolute
 			top: 0
 			right: 0
+	&__title
+		max-width: 400px
+		line-height: 30px
+		margin-top: 0
+		margin-right: 0
+		margin-bottom: 21px
+		+bold
+		font-size: 24px
+	&__subtitle
+		display: block
+		max-width: 500px
+		margin-bottom: 30px
+	&__input
+		margin-bottom: 30px
+		width: 240px
+	&__button
+		width: 380px
+		min-height: 70px
+		+bold
+	&__description
+		display: block
+		max-width: 500px
+		margin-top: 30px
+	&-column
+		flex-basis: 50%

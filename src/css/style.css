@@ -436,7 +436,8 @@ img {
     display: block;
   }
   .offer__manager {
-    max-width: 220px;
+    width: 230px;
+    display: block;
   }
   .tell-block {
     margin-top: 10px;
@@ -449,6 +450,16 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+/* Стили для блока price*/
+.price__title {
+  max-width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Стили модального окна*/
@@ -470,8 +481,17 @@ img {
 
 .modal-dialog {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
-  max-width: 450px;
+  max-width: 1000px;
   width: 90%;
   min-width: 200px;
   background-color: #fff;
@@ -482,5 +502,45 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal__title {
+  max-width: 400px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 21px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.modal__subtitle {
+  display: block;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.modal__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.modal__button {
+  width: 380px;
+  min-height: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.modal__description {
+  display: block;
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+.modal-column {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 /*# sourceMappingURL=style.css.map */
