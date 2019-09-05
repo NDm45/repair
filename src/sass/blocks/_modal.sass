@@ -14,37 +14,66 @@
 		justify-content: space-between
 		align-items: center
 		margin: auto
-		max-width: 1000px
-		width: 90%
+		width: 1170px
 		min-width: 200px
-		background-color: #fff
-		padding: 40px
+		background: linear-gradient(to right, $secondary 52%, #fff 48%)
+		padding: 80px 0px
 		&__close
 			position: absolute
 			top: 0
 			right: 0
 	&__title
-		max-width: 400px
+		max-width: 350px
 		line-height: 30px
 		margin-top: 0
-		margin-right: 0
-		margin-bottom: 21px
+		margin-right: auto
+		margin-left: auto
+		text-align: center
+		margin-bottom: 52px
 		+bold
-		font-size: 24px
+		font-size: 22px
 	&__subtitle
-		display: block
-		max-width: 500px
-		margin-bottom: 30px
+		display: flex
+		max-width: 350px
+		margin-right: auto
+		margin-left: auto
+		margin-bottom: 53px
+		font-size: 16px
 	&__input
 		margin-bottom: 30px
-		width: 240px
+		display: flex
+		margin-right: auto
+		margin-left: auto
+		width: 370px
+		&:first-child
+			margin-bottom: 15px
 	&__button
-		width: 380px
+		width: 370px
+		display: block
+		margin-right: auto
+		margin-left: auto
 		min-height: 70px
 		+bold
 	&__description
-		display: block
-		max-width: 500px
+		display: flex
+		margin-right: auto
+		margin-left: auto
+		max-width: 280px
 		margin-top: 30px
-	&-column
-		flex-basis: 50%
+		text-align: center
+		font-size: 15px
+	&__phone
+		display: flex
+		margin-top: 13px
+		margin-right: auto
+		margin-left: auto
+		max-width: 211px
+		font-size: 24px
+		text-decoration: none
+		color: $text-color
+		+bold
+	&__form
+		flex-basis: 48%
+
+	
+
