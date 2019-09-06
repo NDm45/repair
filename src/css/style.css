@@ -518,6 +518,16 @@ img {
   border-bottom: 2px solid #ffd200;
 }
 
+.card__link:hover {
+  -webkit-box-shadow: inset 0 -10px 0 #ffd200;
+          box-shadow: inset 0 -10px 0 #ffd200;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
 /* Стили модального окна*/
 .modal {
   position: fixed;
