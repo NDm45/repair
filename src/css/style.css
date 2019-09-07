@@ -65,9 +65,10 @@ img {
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 30px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -80,6 +81,10 @@ img {
   padding: 23px 26px;
   font-size: 15px;
   border-radius: 10px;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -324,6 +329,8 @@ img {
   line-height: 35px;
   margin-top: 0;
   margin-bottom: 21px;
+  text-align: left;
+  font-size: 24px;
 }
 
 .offer__subtitle {
@@ -452,7 +459,7 @@ img {
   }
 }
 
-/* Стили для блока price*/
+/* Стили для блока price */
 .price__title {
   max-width: 515px;
   margin-left: auto;
@@ -528,7 +535,7 @@ img {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Стили модального окна*/
+/* Стили модального окна */
 .modal {
   position: fixed;
   left: 0;
@@ -648,5 +655,34 @@ img {
 .modal__form {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+}
+
+/* Стили для блока портфолио */
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 787px;
+  line-height: 45px;
+  margin: auto;
+  margin-bottom: 99px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
