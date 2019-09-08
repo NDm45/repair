@@ -462,8 +462,7 @@ img {
 /* Стили для блока price */
 .price__title {
   max-width: 515px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-bottom: 58px;
   margin-top: 0;
   text-align: center;
@@ -473,66 +472,99 @@ img {
 
 .price__subtitle {
   max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
   font-size: 20px;
 }
 
 .price__card {
-  width: 370px;
-}
-
-.cards {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .card {
-  margin-left: 0;
-  margin-right: 25px;
-  margin-bottom: 30px;
-  display: inline-block;
-  border: 1px solid #dddddd;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.card:nth-child(3n) {
-  margin-right: 0px;
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 }
 
-.card__image {
-  width: 370px;
-  margin-bottom: 40px;
+.card:hover .card__image:before {
+  opacity: 1;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__text {
+  padding-top: 40px;
+  padding-bottom: 47px;
 }
 
 .card__title {
-  font-size: 18px;
   margin-bottom: 30px;
   margin-top: 0;
+  font-size: 18px;
+}
+
+.card__image {
+  position: relative;
+  height: 260px;
+}
+
+.card__image:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .card__link {
   display: inline-block;
-  margin-bottom: 47px;
-  font-size: 16px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   color: #333333;
   text-decoration: none;
-  border-bottom: 2px solid #ffd200;
+  font-size: 16px;
+  position: relative;
 }
 
-.card__link:hover {
-  -webkit-box-shadow: inset 0 -10px 0 #ffd200;
-          box-shadow: inset 0 -10px 0 #ffd200;
+.card__link:hover:after {
+  height: 13px;
 }
 
-.card:hover {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+.card__link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 /* Стили модального окна */
