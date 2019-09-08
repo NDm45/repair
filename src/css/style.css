@@ -89,7 +89,7 @@ img {
 
 @media (max-width: 768px) {
   .section {
-    padding: 35px 0;
+    padding: 36px 0;
   }
   .section-title {
     font-size: 18px;
@@ -99,7 +99,14 @@ img {
     font-size: 14px;
   }
   .button {
-    padding: 19px 62px;
+    padding: 17px 62px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 290px;
+    margin-left: 23px;
   }
 }
 
@@ -262,7 +269,7 @@ img {
             flex-direction: column;
   }
   .hero-list {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
   }
   .hero-text {
     padding-right: 10px;
@@ -272,6 +279,9 @@ img {
 @media (max-width: 768px) {
   .hero {
     padding: 36px 0;
+  }
+  .hero-image {
+    max-width: 95%;
   }
   .hero-text__title {
     margin-top: 0;
@@ -417,9 +427,10 @@ img {
   }
   .offer__title {
     max-width: 260px;
+    font-size: 18px;
     line-height: 22px;
-    margin-bottom: 18px;
-    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-top: 22px;
   }
   .offer__subtitle {
     max-width: 250px;
@@ -436,6 +447,8 @@ img {
     width: 275px;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
+    line-height: 18px;
+    font-size: 14px;
   }
   .offer-feedback {
     margin-top: 20px;
@@ -463,8 +476,8 @@ img {
 .price__title {
   max-width: 515px;
   margin: auto;
-  margin-bottom: 58px;
-  margin-top: 0;
+  margin-top: 15px;
+  margin-bottom: 48px;
   text-align: center;
   font-size: 30px;
   line-height: 45px;
@@ -476,10 +489,6 @@ img {
   text-align: center;
   margin-bottom: 59px;
   font-size: 20px;
-}
-
-.price__card {
-  margin-bottom: 30px;
 }
 
 .card {
@@ -510,8 +519,8 @@ img {
 }
 
 .card__text {
-  padding-top: 40px;
-  padding-bottom: 47px;
+  padding-top: 37px;
+  padding-bottom: 44px;
 }
 
 .card__title {
@@ -567,6 +576,41 @@ img {
   transition: 0.2s;
 }
 
+.card:nth-child(-n+3) {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .price__title {
+    max-width: 270px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-right: 18px;
+    margin-bottom: 23px;
+  }
+  .price__subtitle {
+    max-width: 270px;
+    margin-bottom: 60px;
+    margin-right: 25px;
+    font-size: 14px;
+  }
+  .card__image {
+    width: 271px;
+    height: 191px;
+  }
+  .card__text {
+    padding-top: 30px;
+    padding-bottom: 31px;
+  }
+  .card__title {
+    margin-bottom: 13px;
+    font-size: 14px;
+  }
+  .card__link {
+    font-size: 16px;
+  }
+}
+
 /* Стили для блока портфолио */
 .portfolio {
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
@@ -577,13 +621,15 @@ img {
   max-width: 787px;
   line-height: 45px;
   margin: auto;
+  margin-top: 31px;
   margin-bottom: 99px;
 }
 
 .portfolio__arrows {
   max-width: 120px;
   margin: auto;
-  margin-top: 68px;
+  margin-top: 63px;
+  margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,6 +640,24 @@ img {
 
 .slider__image {
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio__title {
+    max-width: 280px;
+    margin-top: 21px;
+    margin-left: 0;
+    margin-bottom: 41px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .portfolio__arrows {
+    margin-top: 45px;
+    margin-right: 90px;
+  }
+  .slider__image {
+    max-width: 85%;
+  }
 }
 
 /* Стили для блока 5 шагов до ремонта */
@@ -644,13 +708,18 @@ img {
 }
 
 .steps__title {
+  width: 660px;
   margin: auto;
-  margin-bottom: 59px;
+  margin-top: 5px;
+  margin-bottom: 49px;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .steps__subtitle {
   text-align: center;
-  margin-bottom: 58px;
+  margin-bottom: 67px;
+  font-size: 20px;
 }
 
 .steps-block {
@@ -683,6 +752,14 @@ img {
   }
   .step:after {
     display: none;
+  }
+  .steps__title {
+    max-width: 290px;
+    font-size: 18px;
+    line-height: 1;
+  }
+  .steps__subtitle {
+    font-size: 14px;
   }
   .steps-block {
     -webkit-box-orient: vertical;
