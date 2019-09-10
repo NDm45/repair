@@ -15,6 +15,9 @@ img
 		max-width: 550px
 		width: 92%
 		margin-left: 23px
+	.button:hover
+		background-color: none
+		cursor: none
 .button
 	border-radius: 10px
 	background-color: $main-color
@@ -25,6 +28,8 @@ img
 		cursor: pointer
 .section
 	padding: 73px 0
+	&-steps
+		padding: 73px 0
 	&-title
 		font-size: 30px
 		+bold
@@ -49,6 +54,8 @@ img
 @media (max-width: 768px)
 	.section
 		padding: 36px 0
+		&-steps
+			padding-top: 17px
 		&-title
 			font-size: 18px
 		&-subtitle

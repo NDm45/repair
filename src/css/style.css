@@ -46,6 +46,10 @@ img {
     width: 92%;
     margin-left: 23px;
   }
+  .button:hover {
+    background-color: none;
+    cursor: none;
+  }
 }
 
 .button {
@@ -61,6 +65,10 @@ img {
 }
 
 .section {
+  padding: 73px 0;
+}
+
+.section-steps {
   padding: 73px 0;
 }
 
@@ -90,6 +98,9 @@ img {
 @media (max-width: 768px) {
   .section {
     padding: 36px 0;
+  }
+  .section-steps {
+    padding-top: 17px;
   }
   .section-title {
     font-size: 18px;
@@ -753,13 +764,28 @@ img {
   .step:after {
     display: none;
   }
+  .step__image {
+    margin-right: 105px;
+    margin-bottom: 20px;
+  }
+  .step__text {
+    max-width: 140px;
+    margin-right: 80px;
+    font-size: 12px;
+    line-height: 16px;
+  }
   .steps__title {
-    max-width: 290px;
+    max-width: 260px;
     font-size: 18px;
-    line-height: 1;
+    margin-top: 0;
+    margin-right: 25px;
+    line-height: 1.2;
+    margin-bottom: 25px;
   }
   .steps__subtitle {
     font-size: 14px;
+    margin-right: 20px;
+    margin-bottom: 33px;
   }
   .steps-block {
     -webkit-box-orient: vertical;
@@ -798,10 +824,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  width: 1170px;
+  width: 570px;
   min-width: 200px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(52%, #f5f5f5), color-stop(48%, #fff));
-  background: linear-gradient(to right, #f5f5f5 52%, #fff 48%);
+  background: #fff;
   padding: 80px 0px;
 }
 
@@ -815,8 +840,7 @@ img {
   max-width: 350px;
   line-height: 30px;
   margin-top: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   text-align: center;
   margin-bottom: 52px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -829,8 +853,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   max-width: 350px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   margin-bottom: 53px;
   font-size: 16px;
 }
@@ -887,7 +910,42 @@ img {
 }
 
 .modal__form {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 300px;
+    padding: 40px 0px;
+  }
+  .modal__title {
+    max-width: 290px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .modal__subtitle {
+    max-width: 155px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .modal__input {
+    width: 280px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .modal__button {
+    width: 280px;
+    font-size: 12px;
+  }
+  .modal__description {
+    max-width: 250px;
+    font-size: 14px;
+  }
+  .modal__phone {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
